@@ -1,0 +1,6 @@
+setup.py
+smart_odds.egg-info/PKG-INFO
+smart_odds.egg-info/SOURCES.txt
+smart_odds.egg-info/dependency_links.txt
+smart_odds.egg-info/requires.txt
+smart_odds.egg-info/top_level.txt

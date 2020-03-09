@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>Tennis Data</h1>
+            </div>
+            <div class="card-body">
+                    <table id="datatables-basic" class="table text-center table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>ATP</th>
+                            <th>Location</th>
+                            <th>Tournament</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                         {% for row in tennis_data %}
+                            <tr>
+                                <td class="cell_li_name">
+									<a href="{{ url_for('set_tennis_data', id=row.id ) }}">{{ row.id }}</a>
+								</td>
+                                <td>{{ row.atp }}</td>
+                                <td>{{ row.location }}</td>
+                                <td>{{ row.tournament }}</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
